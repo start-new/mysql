@@ -11,7 +11,7 @@ services:
         ports:
             - "{{ cookiecutter.mysql_port }}:3306"
         environment:
-            - MYSQL_DATABASE={{ cookecutter.mysql_dbname }}
+            - MYSQL_DATABASE={{ cookiecutter.mysql_dbname }}
             - MYSQL_ROOT_PASSWORD={{ cookiecutter.mysql_rootpass }}
             - MYSQL_USER={{ cookiecutter.mysql_user }}
             - MYSQL_PASSWORD={{ cookiecutter.mysql_userpass }}
