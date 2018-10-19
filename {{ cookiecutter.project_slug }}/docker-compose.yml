@@ -1,0 +1,19 @@
+
+version: "3"
+services:
+    mysql:
+        image: mysql:{{ cookiecutter.mysql_version }}
+        command: 
+            - '--character-set-server={{ cookiecutter.mysql_charset }}'
+            - '--collation-server={{ cookiecutter.mysql_charset }}_unicode_ci'
+            - '--default-auth=mysql_native_password'
+        restart: always
+        ports:
+            - "{{ cookiecutter.mysql_port }}:3306"
+        environment:
+            - MYSQL_DATABASE={{ cookecutter.mysql_dbname }}
+            - MYSQL_ROOT_PASSWORD={{ cookiecutter.mysql_rootpass }}
+            - MYSQL_USER={{ cookiecutter.mysql_user }}
+            - MYSQL_PASSWORD={{ cookiecutter.mysql_userpass }}
+        volumes:
+            - "./.docker/data/db/mysql:/var/lib/mysql" 

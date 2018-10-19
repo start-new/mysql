@@ -1,0 +1,15 @@
+{
+    "project_name": "My Project",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+    "mysql_version": [
+        "latest",
+        "8.0",
+        "5.7"
+    ],
+    "mysql_charset": "utf8mb4",
+    "mysql_port": "13306",
+    "mysql_dbname": "mydb",
+    "mysql_rootpass": "root",
+    "mysql_user": "myuser",
+    "mysql_userpass": "myuserpass"
+}
