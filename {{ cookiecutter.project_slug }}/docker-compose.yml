@@ -3,6 +3,7 @@ version: "3"
 services:
     mysql:
         image: mysql:{{ cookiecutter.mysql_version }}
+        working-dir: /app
         command: 
             - '--character-set-server={{ cookiecutter.mysql_charset }}'
             - '--collation-server={{ cookiecutter.mysql_charset }}_unicode_ci'
@@ -19,3 +20,4 @@ services:
             - MYSQL_PASSWORD={{ cookiecutter.mysql_userpass }}
         volumes:
             - "./.docker/data/db/mysql:/var/lib/mysql" 
+            - ".:/app"
