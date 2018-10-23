@@ -7,7 +7,7 @@ services:
             - '--character-set-server={{ cookiecutter.mysql_charset }}'
             - '--collation-server={{ cookiecutter.mysql_charset }}_unicode_ci'
             {% if cookiecutter.mysql_native_plugin %}
-            - '--default-authentication-plugin=mysql_native_password'
+            - '--default-authentication-plugin=mysql_native_auth'
             {% endif %}
         restart: always
         ports:
