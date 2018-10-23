@@ -1,1 +1,1 @@
-# cookiecutter-simple-mysql
+# cookiecutter-mysql
