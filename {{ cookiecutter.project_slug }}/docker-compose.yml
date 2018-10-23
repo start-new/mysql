@@ -8,7 +8,7 @@ services:
             - '--collation-server={{ cookiecutter.mysql_charset }}_unicode_ci'
             {%- if cookiecutter.mysql_native_auth|lower in ['yes', 'y'] -%}
             - '--default-authentication-plugin=mysql_native_password'
-            {%- endif -%}
+            {%- endif %}
         restart: always
         ports:
             - "{{ cookiecutter.mysql_port }}:3306"
