@@ -4,7 +4,8 @@
     "mysql_version": [
         "latest",
         "8.0",
-        "5.7"
+        "5.7",
+        "5.6"
     ],
     "mysql_charset": "utf8mb4",
     "mysql_native_auth": "no",
