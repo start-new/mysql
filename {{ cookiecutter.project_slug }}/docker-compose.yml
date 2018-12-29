@@ -19,5 +19,7 @@ services:
             - MYSQL_USER={{ cookiecutter.mysql_user }}
             - MYSQL_PASSWORD={{ cookiecutter.mysql_userpass }}
         volumes:
-            - "./.docker/data/db/mysql:/var/lib/mysql" 
+            - "{{ cookiecutter.project_slug }}_mysql:/var/lib/mysql" 
             - ".:/app"
+volumes:
+    {{ cookiecutter.project_slug}}_mysql:
