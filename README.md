@@ -2,7 +2,7 @@
 
 Automatically generates a basic docker-compose file to install and use the mysql database in your project.
 
-## Requirements
+## Requirements & Install
 
 To use the generated file, you need to have Docker installed on your computer. Then:
 
