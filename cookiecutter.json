@@ -13,5 +13,5 @@
     "mysql_dbname": "mydb",
     "mysql_rootpass": "root",
     "mysql_user": "myuser",
-    "mysql_userpass": "myuserpass"
+    "mysql_userpass": "mypass"
 }
