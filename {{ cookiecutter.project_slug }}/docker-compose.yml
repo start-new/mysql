@@ -1,5 +1,5 @@
 
-version: "3"
+version: "3.7"
 services:
     mysql:
         image: mysql:{{ cookiecutter.mysql_version }}
@@ -19,5 +19,4 @@ services:
             - MYSQL_USER={{ cookiecutter.mysql_user }}
             - MYSQL_PASSWORD={{ cookiecutter.mysql_userpass }}
         volumes:
-            - "./mysql:/var/lib/mysql" 
-            - ".:/app"
+            - "./mysql:/var/lib/mysql"
