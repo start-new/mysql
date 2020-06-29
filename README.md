@@ -1,4 +1,4 @@
-# cookiecutter-mysql
+# Mysql Cookiecutter template
 
 Automatically generates a basic docker-compose file to install and use the mysql database in your project.
 
