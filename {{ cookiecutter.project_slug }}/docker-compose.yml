@@ -19,4 +19,7 @@ services:
             - MYSQL_USER={{ cookiecutter.mysql_user }}
             - MYSQL_PASSWORD={{ cookiecutter.mysql_userpass }}
         volumes:
-            - "./mysql:/var/lib/mysql"
+            - "mysql_{{ cookiecutter.mysql_port }}:/var/lib/mysql"
+           
+volumes:
+    mysql_{{ cookiecutter.mysql_port }}:
